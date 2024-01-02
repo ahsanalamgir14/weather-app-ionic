@@ -1,0 +1,39 @@
+
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Home Page G00411227
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Country</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <app-explore-container name="Country page"></app-explore-container>
+
+  <ion-list *ngFor="let data of post">
+
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="../../asset/icon/"
+     </ion-avatar>
+     <ion-label>
+      <h3>{{data.title}}</h3>
+      <p>{{data.body}}</p>
+			<p>{{data.currencies}}</p>
+      <p>{{data.capital}}</p>
+      <p>{{data.languages}}</p>
+      <p>{{data.official}}</p>
+      <p>{{data.flag}}</p>
+     </ion-label>
+    </ion-item>
+
+    </ion-list>
+  </ion-content>
+ 
+
